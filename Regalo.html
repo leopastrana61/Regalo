@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Un regalo de la Grieta!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #010a13;
+            font-family: 'Beaufort for LoL', 'Times New Roman', serif;
+            display: block;
+            min-height: 100vh;
+            color: #f0e6d2;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor principal estilo tarjeta de LoL */
+        .gift-card {
+            max-width: 550px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #020c16 0%, #061423 100%);
+            border: 2px solid #c8aa6e;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(200, 170, 110, 0.2);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Adorno de esquina superior izquierda */
+        .gift-card::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid #c8aa6e;
+            border-left: 2px solid #c8aa6e;
+        }
+
+        /* Adorno de esquina superior derecha */
+        .gift-card::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid #c8aa6e;
+            border-right: 2px solid #c8aa6e;
+        }
+
+        /* Encabezado Épico */
+        .header-title {
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #a09b8c;
+            margin-bottom: 10px;
+        }
+
+        .champion-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f0e6d2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(240, 230, 210, 0.3);
+            margin-bottom: 5px;
+        }
+
+        /* Línea divisoria estilo Hextech */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #c8aa6e 50%, transparent 100%);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Cuadro de texto del Mensaje */
+        .message-box {
+            background-color: rgba(1, 10, 19, 0.6);
+            border: 1px solid #785a28;
+            padding: 25px;
+            margin: 20px 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cdbe91;
+            text-align: left;
+            font-style: italic;
+        }
+
+        .message-box strong {
+            color: #f0e6d2;
+            font-style: normal;
+        }
+
+        /* Botón de Reclamar */
+        .claim-button {
+            display: inline-block;
+            background: linear-gradient(180deg, #1e2328 0%, #111318 100%);
+            border: 1px solid #c89b3c;
+            color: #cdbe91;
+            padding: 12px 35px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .claim-button:hover {
+            color: #f0e6d2;
+            background: linear-gradient(180deg, #2a3038 0%, #171a21 100%);
+            border-color: #f0e6d2;
+            box-shadow: 0 0 15px rgba(200, 170, 110, 0.4);
+        }
+
+        /* Detalles inferiores */
+        .footer-gems {
+            margin-top: 25px;
+            color: #463714;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gift-card">
+        <div class="header-title">Has recibido un aspecto de regalo</div>
+        <div class="champion-name">Volibear Capitán</div>
+        
+        <div class="divider"></div>
+
+        <div class="message-box">
+            <strong>Estimado Lothar:</strong><br><br>
+            Se te hace entrega oficial de este incentivo visual de alta gama para que dejes de usar la skin base como un humilde y juegues como el verdadero carry que sos.<br><br>
+            Tu camino a <strong>Challenger</strong> empieza hoy. Confiamos en vos, en tus mecánicas y en que algún día vas a dejar de mirar la pantalla en gris. ¡A romperla toda en la Grieta!
+        </div>
+
+        <button class="claim-button">Desbloquear Aspecto</button>
+        
+        <div class="footer-gems">◆ ◆ ◆</div>
+    </div>
+
+</body>
+</html>
